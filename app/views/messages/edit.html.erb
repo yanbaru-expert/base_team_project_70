@@ -1,0 +1,8 @@
+<p>更新</p>
+<%= form_with model: @message, local: true do |f| %>
+  <p>タイトル：<%= f.text_field :title %></p>
+  <p>メッセージ本文：<%= f.text_area :content %></p>
+  <%= f.submit "送信" %>
+<% end %>
+
+<br><%= link_to "キャンセル", messages_path %>
