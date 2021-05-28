@@ -22,13 +22,6 @@ ActiveRecord::Schema.define(version: 2021_05_27_013431) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "posts", force: :cascade do |t|
-    t.string "title"
-    t.text "content"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "tasks", force: :cascade do |t|
     t.string "title"
     t.text "content"
