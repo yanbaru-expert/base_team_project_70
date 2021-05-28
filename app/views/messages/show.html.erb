@@ -6,8 +6,8 @@
   </tr>
   <tr>
     <td><%= @message.title %></td>
-    <td><%= @message.content %></td>
+    <td><%= simple_format(h @message.content) %></td>
   </tr>
 </table>
 
-<br><%= link_to "一覧画面へ", messages_path %>
+<br><%= link_to "投稿一覧へ", messages_path %>
