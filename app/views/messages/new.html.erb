@@ -1,0 +1,6 @@
+<p>メッセージ投稿</p>
+<%= form_with model: @message, local: true do |f| %>
+  <p>メッセージタイトル：<%= f.text_field :title %></p>
+  <p>メッセージ本文：<%= f.text_area :content %></p>
+  <%= f.submit "送信" %>
+<% end %>
